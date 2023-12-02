@@ -1,0 +1,12 @@
+<div id="<%= dom_id company %>">
+  <p>
+    <strong>Name:</strong>
+    <%= company.name %>
+  </p>
+
+  <p>
+    <strong>Logo:</strong>
+    <%= link_to company.logo.filename, company.logo if company.logo.attached? %>
+  </p>
+
+</div>
